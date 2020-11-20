@@ -77,7 +77,7 @@ extension LDCLibraryViewController {
             content.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             content.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             content.topAnchor.constraint(equalTo: titleView!.bottomAnchor, constant: 16),
-            content.bottomAnchor.constraint(equalTo: closeView!.topAnchor, constant: 16),
+            content.bottomAnchor.constraint(equalTo: closeView!.topAnchor, constant: -16),
         ])
         closeView = content
     }
