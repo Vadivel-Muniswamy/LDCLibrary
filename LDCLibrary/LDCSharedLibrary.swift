@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LDCSharedLibrary {
+public class LDCSharedLibrary {
     private static var shared:LDCSharedLibrary?
     private var delegate:LDCLibraryProtocol!
 
