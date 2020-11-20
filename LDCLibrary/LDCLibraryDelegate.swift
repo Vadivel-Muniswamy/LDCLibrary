@@ -1,5 +1,5 @@
 //
-//  LDCLibraryProtocol.swift
+//  LDCLibraryDelegate.swift
 //  LDCLibrary
 //
 //  Created by RBEI on 20/11/20.

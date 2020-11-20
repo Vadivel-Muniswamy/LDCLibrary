@@ -10,12 +10,12 @@ import UIKit
 
 class LDCLibraryViewController: UIViewController {
 
-    private var delegate:LDCLibraryProtocol!
+    private var delegate:LDCLibraryDelegate!
     private var titleView:UIView?
     private var contentView:UIView?
     private var closeView:UIView?
     
-    init(_ delegate:LDCLibraryProtocol) {
+    init(_ delegate:LDCLibraryDelegate) {
         super.init(nibName: nil, bundle: nil)
         self.delegate = delegate
     }
