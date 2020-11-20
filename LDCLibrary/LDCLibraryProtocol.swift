@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LDCLibraryProtocol {
+public protocol LDCLibraryProtocol {
     func viewToDisplay() -> UIView
     func buttonForAction() -> UIButton
     func labelToDisplay() -> UILabel
