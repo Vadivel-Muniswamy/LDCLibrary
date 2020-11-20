@@ -1,6 +1,6 @@
 //
-//  LDCLibrary.swift
-//  LDCLibrary
+//  LDCSharedLibrary.swift
+//  LDCSharedLibrary
 //
 //  Created by RBEI on 20/11/20.
 //  Copyright © 2020 foolbuddies. All rights reserved.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LDCLibrary {
-    private static var shared:LDCLibrary?
+class LDCSharedLibrary {
+    private static var shared:LDCSharedLibrary?
     private var delegate:LDCLibraryProtocol!
 
     private init() {
@@ -25,11 +25,11 @@ class LDCLibrary {
             shared.delegate = delegate
         }
         else {
-            shared = LDCLibrary(delegate)
+            shared = LDCSharedLibrary(delegate)
         }
     }
     
-    public static func instance() -> LDCLibrary {
+    public static func instance() -> LDCSharedLibrary {
         return shared!
     }
     
