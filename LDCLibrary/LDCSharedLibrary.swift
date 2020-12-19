@@ -22,13 +22,18 @@ public class LDCSharedLibrary {
         }
     }
     
-    @discardableResult
     public static func shared() -> LDCSharedLibrary {
         if let instance = instance {
             return instance
         }
         else {
             fatalError("instance should be initialized before using")
+        }
+    }
+    
+    public static var isInitialized:Bool {    
+        get {
+            return (instance != nil)
         }
     }
     
