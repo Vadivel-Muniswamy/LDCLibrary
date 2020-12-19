@@ -2,7 +2,7 @@
 //  LDCLibraryViewController.swift
 //  LDCLibrary
 //
-//  Created by RBEI on 20/11/20.
+//  Created by foolbuddies on 20/11/20.
 //  Copyright © 2020 foolbuddies. All rights reserved.
 //
 
@@ -15,9 +15,9 @@ class LDCLibraryViewController: UIViewController {
     private var contentView:UIView?
     private var closeView:UIView?
     
-    init(_ delegate:LDCLibraryDelegate) {
+    init() {
         super.init(nibName: nil, bundle: nil)
-        self.delegate = delegate
+        self.delegate = LDCSharedLibrary.shared().delegate
     }
     
     override func loadView() {

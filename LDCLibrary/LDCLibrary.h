@@ -2,7 +2,7 @@
 //  LDCLibrary.h
 //  LDCLibrary
 //
-//  Created by RBEI on 20/11/20.
+//  Created by foolbuddies on 20/11/20.
 //  Copyright © 2020 foolbuddies. All rights reserved.
 //
 

@@ -2,40 +2,48 @@
 //  LDCSharedLibrary.swift
 //  LDCLibrary
 //
-//  Created by RBEI on 20/11/20.
+//  Created by foolbuddies on 20/11/20.
 //  Copyright © 2020 foolbuddies. All rights reserved.
 //
 
 import UIKit
 
 public class LDCSharedLibrary {
-    private static var shared:LDCSharedLibrary?
-    private var delegate:LDCLibraryDelegate!
-
-    private init() {
-        fatalError("Should have delegate")
+    
+    var delegate:LDCLibraryDelegate
+    private static var instance: LDCSharedLibrary? = nil
+    
+    public static func initialize(delegate:LDCLibraryDelegate) {
+        if let _ = instance {
+            fatalError("instance should be initialized only once")
+        }
+        else {
+            instance = LDCSharedLibrary(delegate: delegate)
+        }
     }
-
-    private init(_ delegate:LDCLibraryDelegate) {
+    
+    @discardableResult
+    public static func shared() -> LDCSharedLibrary {
+        if let instance = instance {
+            return instance
+        }
+        else {
+            fatalError("instance should be initialized before using")
+        }
+    }
+    
+    private init(delegate:LDCLibraryDelegate) {
         self.delegate = delegate
     }
 
-    public static func initialize(_ delegate:LDCLibraryDelegate) {
-        if let shared = shared {
-            shared.delegate = delegate
-        }
-        else {
-            shared = LDCSharedLibrary(delegate)
-        }
-    }
-    
-    public static func instance() -> LDCSharedLibrary {
-        return shared!
-    }
-    
-    public func presentLibrary(_ parent:UIViewController) {
-        let view = LDCLibraryViewController(delegate)
+    public func presentLibraryView(_ parent:UIViewController) {
+        let view = LDCLibraryViewController()
         view.modalPresentationStyle = .overFullScreen
         parent.present(view, animated:true)
     }
+
+    public func getLibraryViewContoller() -> UIViewController {
+        return LDCLibraryViewController()
+    }
+
 }
