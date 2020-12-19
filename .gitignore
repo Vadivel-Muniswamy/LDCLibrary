@@ -4,3 +4,6 @@ LDCLibrary.xcodeproj/project.xcworkspace/xcuserdata/*
 LDCLibrary.xcodeproj/xcuserdata/*
 Example/LDCTestProject/LDCTestProject.xcodeproj/project.xcworkspace/xcuserdata/*
 Example/LDCTestProject/LDCTestProject.xcodeproj/xcuserdata/*
+Example/LDCTestProject/LDCTestProject.xcworkspace/*
+Example/LDCTestProject/Podfile.lock
+Example/LDCTestProject/Pods/*
