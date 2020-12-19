@@ -1,4 +1,6 @@
 
 .DS_Store
-LDCLibrary.xcodeproj/project.xcworkspace/xcuserdata/rbei.xcuserdatad/UserInterfaceState.xcuserstate
-LDCLibrary.xcodeproj/project.xcworkspace/xcuserdata/rbei.xcuserdatad/UserInterfaceState.xcuserstate
+LDCLibrary.xcodeproj/project.xcworkspace/xcuserdata/*
+LDCLibrary.xcodeproj/xcuserdata/*
+Example/LDCTestProject/LDCTestProject.xcodeproj/project.xcworkspace/xcuserdata/*
+Example/LDCTestProject/LDCTestProject.xcodeproj/xcuserdata/*
