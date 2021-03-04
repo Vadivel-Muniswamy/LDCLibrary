@@ -19,7 +19,7 @@ struct LDCLib {
 extension String {
     func ldcLocalize() -> String {
         let bundle = Bundle(for: LDCSharedLibrary.self)
-        let string = NSLocalizedString(self, tableName: nil, bundle:bundle, comment: "")
+        let string = NSLocalizedString(self, tableName: "LDCLibLocalization", bundle:bundle, comment: "")
         return string
     }
 }
