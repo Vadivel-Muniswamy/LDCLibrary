@@ -29,4 +29,5 @@ Pod::Spec.new do |spec|
     spec.source       = { :git => "https://github.com/Vadivel-Muniswamy/LDCLibrary.git", :tag => "#{spec.version}" }
     spec.source_files  = "LDCLibrary/**/*.{h,m,swift}"
     spec.requires_arc = true
+    spec.resources = ["LDCLibrary/**/*.lproj/LDCLibLocalization.strings"]
 end

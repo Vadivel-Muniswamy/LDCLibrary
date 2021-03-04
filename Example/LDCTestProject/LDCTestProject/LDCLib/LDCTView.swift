@@ -70,7 +70,7 @@ class LDCTButton: UIButton {
         layer.borderWidth = 2
         layer.backgroundColor = UIColor.red.cgColor
         backgroundColor = .systemBlue
-        setTitle("Testing Passed... Close it", for: .normal)
+        //setTitle("Testing Passed... Close it", for: .normal)
         setTitleColor(.systemPurple, for: .normal)
     }
 }
