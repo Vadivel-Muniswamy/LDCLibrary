@@ -57,6 +57,7 @@ extension LDCLibraryViewController {
 
     private func setupBottom() {
         let button = delegate.buttonForAction()
+        button.setTitle(LDCLib.LibVc.closeButtonTitle, for: .normal)
         button.addTarget(self, action: #selector(closeWindow), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(button)
