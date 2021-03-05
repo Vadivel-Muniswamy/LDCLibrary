@@ -11,9 +11,25 @@ import Foundation
 struct LDCLib {
     struct LibVc {
         static var closeButtonTitle: String {
-            "ldcCloseButtonTitle".ldcLocalize()
+            LDCStringConstants.ldcCloseButtonTitle.ldcLocalize()
         }
     }
+    
+    struct LibAdlString {
+        static var ldcString2: String {
+            LDCStringConstants.ldcString2.ldcLocalize()
+        }
+        static var ldcString3: String {
+            LDCStringConstants.ldcString3.ldcLocalize()
+        }
+    }
+}
+
+private struct LDCStringConstants {
+    static let ldcCloseButtonTitle = "ldcCloseButtonTitle"
+    static let ldcString2 = "ldcString2"
+    static let ldcString3 = "ldcString3"
+    static let ldcString4 = "ldcString4"
 }
 
 extension String {
