@@ -16,6 +16,8 @@
 		253AB69B258DD1DA004CE512 /* LDCTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253AB69A258DD1DA004CE512 /* LDCTView.swift */; };
 		253AB69D258DD1F1004CE512 /* LDCLibDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253AB69C258DD1F1004CE512 /* LDCLibDataProvider.swift */; };
 		253AB69F258DD693004CE512 /* LDCSomeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253AB69E258DD693004CE512 /* LDCSomeClass.swift */; };
+		25BE690925F1FF9C008D0B5E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25BE690B25F1FF9C008D0B5E /* Localizable.strings */; };
+		5C971DDC1B9B5ABB1ED11C2D /* Pods_LDCTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE8FEB5C713BE0EAB5E072A /* Pods_LDCTestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,13 @@
 		253AB69A258DD1DA004CE512 /* LDCTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDCTView.swift; sourceTree = "<group>"; };
 		253AB69C258DD1F1004CE512 /* LDCLibDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDCLibDataProvider.swift; sourceTree = "<group>"; };
 		253AB69E258DD693004CE512 /* LDCSomeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDCSomeClass.swift; sourceTree = "<group>"; };
+		25BE690A25F1FF9C008D0B5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		25BE690C25F1FFB4008D0B5E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		25BE690D25F1FFB5008D0B5E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		25BE690E25F1FFB5008D0B5E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38F9A961446149E892C3895A /* Pods-LDCTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDCTestProject.debug.xcconfig"; path = "Target Support Files/Pods-LDCTestProject/Pods-LDCTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BFE8FEB5C713BE0EAB5E072A /* Pods_LDCTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LDCTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF223BA60DB89F8F85677750 /* Pods-LDCTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDCTestProject.release.xcconfig"; path = "Target Support Files/Pods-LDCTestProject/Pods-LDCTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C971DDC1B9B5ABB1ED11C2D /* Pods_LDCTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +59,7 @@
 				253AB684258DD119004CE512 /* LDCTestProject */,
 				253AB683258DD119004CE512 /* Products */,
 				2EBE9C044CAC6767FAC539A6 /* Pods */,
+				E0C676DAE690512AD85E82C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +92,7 @@
 				253AB69A258DD1DA004CE512 /* LDCTView.swift */,
 				253AB69C258DD1F1004CE512 /* LDCLibDataProvider.swift */,
 				253AB69E258DD693004CE512 /* LDCSomeClass.swift */,
+				25BE690B25F1FF9C008D0B5E /* Localizable.strings */,
 			);
 			path = LDCLib;
 			sourceTree = "<group>";
@@ -88,8 +100,18 @@
 		2EBE9C044CAC6767FAC539A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				38F9A961446149E892C3895A /* Pods-LDCTestProject.debug.xcconfig */,
+				EF223BA60DB89F8F85677750 /* Pods-LDCTestProject.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E0C676DAE690512AD85E82C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8FEB5C713BE0EAB5E072A /* Pods_LDCTestProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 253AB696258DD11F004CE512 /* Build configuration list for PBXNativeTarget "LDCTestProject" */;
 			buildPhases = (
+				5D070B00DD4C90B079C5AEF9 /* [CP] Check Pods Manifest.lock */,
 				253AB67E258DD119004CE512 /* Sources */,
 				253AB67F258DD119004CE512 /* Frameworks */,
 				253AB680258DD119004CE512 /* Resources */,
+				5F09E3C52F9B5B2B8442FA1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +158,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 253AB679258DD119004CE512;
 			productRefGroup = 253AB683258DD119004CE512 /* Products */;
@@ -151,12 +176,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				253AB692258DD11F004CE512 /* LaunchScreen.storyboard in Resources */,
+				25BE690925F1FF9C008D0B5E /* Localizable.strings in Resources */,
 				253AB68F258DD11F004CE512 /* Assets.xcassets in Resources */,
 				253AB68D258DD119004CE512 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D070B00DD4C90B079C5AEF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LDCTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F09E3C52F9B5B2B8442FA1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LDCTestProject/Pods-LDCTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LDCTestProject/Pods-LDCTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LDCTestProject/Pods-LDCTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		253AB67E258DD119004CE512 /* Sources */ = {
@@ -179,6 +247,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				253AB68C258DD119004CE512 /* Base */,
+				25BE690C25F1FFB4008D0B5E /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -187,8 +256,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				253AB691258DD11F004CE512 /* Base */,
+				25BE690D25F1FFB5008D0B5E /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		25BE690B25F1FF9C008D0B5E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25BE690A25F1FF9C008D0B5E /* en */,
+				25BE690E25F1FFB5008D0B5E /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -198,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -258,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -310,9 +391,11 @@
 		};
 		253AB697258DD11F004CE512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F9A961446149E892C3895A /* Pods-LDCTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J6GFVT3XTC;
 				INFOPLIST_FILE = LDCTestProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,9 +411,11 @@
 		};
 		253AB698258DD11F004CE512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF223BA60DB89F8F85677750 /* Pods-LDCTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J6GFVT3XTC;
 				INFOPLIST_FILE = LDCTestProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
