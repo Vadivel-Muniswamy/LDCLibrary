@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LDCLibrary"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "This is the private library"
 
   spec.description  = "This is the private library to test the functionality of view from library to application and application to library"
