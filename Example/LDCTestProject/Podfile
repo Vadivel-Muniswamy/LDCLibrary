@@ -2,5 +2,6 @@ target 'LDCTestProject' do
   use_frameworks!
 
   pod 'LDCLibrary', :git => 'https://github.com/Vadivel-Muniswamy/LDCLibrary.git'
+  #pod 'Vadivel-Muniswamy/LDCLibrary', '=0.0.3'
 
 end
